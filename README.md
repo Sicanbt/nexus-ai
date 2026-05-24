@@ -1,103 +1,99 @@
-# NEXUS AI 🤖
+# NEXUS AI — Multi-Agent Intelligence Platform
 
-> Multi-Agent Autonomous Business Intelligence Platform
+> Orchestrating specialized AI agents powered by **MiMo V2.5** to research, reason, analyze, write, and act.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Status](https://img.shields.io/badge/Status-MVP-green.svg)]()
-[![AI](https://img.shields.io/badge/Powered%20by-Multi--Agent%20AI-blue.svg)]()
+![NEXUS AI](https://img.shields.io/badge/NEXUS%20AI-v2.5-4f8ef7?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiIGZpbGw9IiM0ZjhlZjciLz48L3N2Zz4=)
+![MiMo V2.5](https://img.shields.io/badge/Model-MiMo%20V2.5-7c3aed?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
+
+---
 
 ## Overview
 
-NEXUS AI is an autonomous multi-agent platform that eliminates operational bottlenecks by deploying specialized AI agents that collaborate, reason, and execute business tasks — without human intervention at every step.
+**NEXUS AI** is a next-generation multi-agent platform that coordinates five specialized AI agents through a unified orchestration layer. At its core runs **MiMo V2.5**, a state-of-the-art reasoning model purpose-built for agent collaboration, tool use, and multi-step problem solving.
 
-**The Problem:** Business teams spend 60-70% of their time collecting, formatting, and analyzing data instead of making strategic decisions. Existing AI tools are single-purpose and fragmented.
-
-**The Solution:** One platform. Multiple specialized AI agents working in parallel, sharing context, debating conclusions, and executing decisions across your entire business stack.
+Whether you need deep research, complex data analysis, logical reasoning, polished writing, or autonomous task execution — NEXUS AI routes your goal to the right agent (or combination of agents) and delivers a synthesized result.
 
 ---
 
-## Core Architecture
+## Agents
+
+| Agent | Role | Capabilities |
+|-------|------|-------------|
+| 🔍 **Research** | Information gathering | Web search, document retrieval, knowledge synthesis |
+| 📊 **Analytics** | Data processing | Pattern recognition, statistical analysis, insight generation |
+| 🧠 **Reasoning** | Logical inference | Chain-of-thought, causal analysis, multi-step problem solving |
+| ✍️ **Writer** | Content creation | Reports, summaries, documentation, long-form content |
+| ⚡ **Action** | Task execution | API calls, browser automation, file ops, workflow triggers |
+
+---
+
+## Powered by MiMo V2.5
+
+MiMo V2.5 is the reasoning backbone of NEXUS AI. Key capabilities:
+
+- **Extended context window** — deep document and conversation analysis
+- **Native tool-calling** — seamless function execution across agents
+- **Chain-of-thought reasoning** — self-correcting, multi-step inference
+- **Multi-agent coordination** — built-in protocol for agent-to-agent communication
+- **Low-latency inference** — optimized for real-time pipeline throughput
+- **Domain fine-tuning** — specialized on agent orchestration tasks
+
+---
+
+## The NEXUS Pipeline
 
 ```
-User Input (Natural Language)
-        ↓
-┌─────────────────────────────┐
-│     Orchestrator Agent      │  ← Decomposes goals into task trees
-└─────────────────────────────┘
-        ↓ distributes tasks
-┌──────────┬──────────┬──────────┬──────────┬──────────┐
-│ Research │Analytics │Reasoning │  Writer  │  Action  │
-│  Agent   │  Agent   │  Agent   │  Agent   │  Agent   │
-└──────────┴──────────┴──────────┴──────────┴──────────┘
-        ↓ multi-agent debate & synthesis
-┌─────────────────────────────┐
-│     Output / Execution      │  ← Report, Dashboard, or Direct Action
-└─────────────────────────────┘
+User Goal → Orchestration (MiMo V2.5) → Agent Execution → Synthesis → Output
 ```
 
-## Agent Roles
-
-| Agent | Responsibility |
-|-------|---------------|
-| **Orchestrator** | Decomposes user goals into sub-tasks, manages agent lifecycle |
-| **Research** | Web scraping, competitor analysis, market data collection |
-| **Analytics** | Data processing, KPI calculation, visualization generation |
-| **Reasoning** | Long chain-of-thought synthesis, multi-perspective debate |
-| **Writer** | Executive reports, presentations, summaries |
-| **Action** | Direct execution to Slack, Notion, CRM, Google Workspace |
+1. **Task Intake** — User submits a goal or query
+2. **Orchestration** — MiMo V2.5 decomposes the task and routes to relevant agents
+3. **Agent Execution** — Agents run in parallel, each handling their specialty
+4. **Synthesis** — Results are merged, validated, and deduplicated
+5. **Delivery** — Final output returned to the user
 
 ---
 
-## Key Features
+## Project Structure
 
-- **Natural Language Orchestration** — Just describe what you need
-- **Multi-Agent Debate** — Agents cross-validate each other's outputs
-- **Long-Term Memory** — Context persists across sessions, gets smarter over time
-- **On-Premise Ready** — Sensitive business data never leaves your infrastructure
-- **Plug-and-Play Integrations** — Slack, Notion, Google Workspace, CRM, ERP
+```
+nexus-ai/
+├── index.html      # Main platform UI (dark theme, pure HTML/CSS/JS)
+└── README.md       # This file
+```
 
----
-
-## Performance
-
-- Average **35% reduction** in operational workload (pilot data)
-- Average **40 hours/week** saved per operations team
-- **3 pilot businesses** validated MVP
+The frontend is built with **zero external dependencies** — pure HTML, CSS, and vanilla JavaScript. No frameworks, no CDN calls, no build step required.
 
 ---
 
-## Tech Stack
+## Features
 
-- **Agent Framework:** Custom multi-agent orchestration engine
-- **LLM Backend:** Pluggable (OpenAI, xAI Grok, local models)
-- **Memory:** Vector database (persistent context)
-- **Integrations:** REST API + webhook-based connectors
-- **Deployment:** Docker, VPS, or on-premise
-
----
-
-## Roadmap
-
-- [x] MVP — Core agent orchestration
-- [x] Pilot testing (3 businesses)
-- [ ] Web dashboard UI
-- [ ] Enterprise SSO + RBAC
-- [ ] Marketplace for domain-specific agent packs
-- [ ] Mobile app
+- Dark theme UI with animated background grid
+- Live agent status indicators
+- Responsive layout (mobile-friendly)
+- Scroll-triggered animations via Intersection Observer
+- MiMo V2.5 model showcase with animated orb
+- 5-step pipeline visualization
+- Real-time clock in nav badge
 
 ---
 
 ## Getting Started
 
+Simply open `index.html` in any modern browser — no server or build tools needed.
+
 ```bash
 git clone https://github.com/Sicanbt/nexus-ai.git
 cd nexus-ai
-cp .env.example .env
-docker-compose up -d
+open index.html   # macOS
+# or
+xdg-open index.html  # Linux
 ```
 
 ---
 
 ## License
 
-MIT © 2024 NEXUS AI
+MIT © 2026 NEXUS AI
